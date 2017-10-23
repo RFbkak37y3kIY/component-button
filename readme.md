@@ -24,9 +24,40 @@ npm install spa-component-button
 Add the singleton to the scope:
 
 ```js
-var button = require('spa-component-button');
+var Button = require('spa-component-button');
+```
+Create instance with custom config:
+
+```js
+var btnSimple, btnIcon, btnDetached;
+
+btnSimple = new Button({
+    $node: document.getElementById('btnSimple'),
+    value: 'Simple button'
+});
+
+btnIcon = new Button({
+    $node: document.getElementById('btnIcon'),
+    icon: 'menu'
+    value: 'Button with icon'
+});
+
+btnDetached = new Button({
+    value: 'Button not added to the page',
+    className: 'wide'
+});
 ```
 
+### Constructor config ###
+
+Name | Type | Default value | Description
+----- | ----- | ------------- | -------------
+value | String | "" | button caption text (generated if not set)
+icone | String | "" | button icon name
+
+### Has global options: ###
+
+`Button.prototype.clickDuration` - time to apply "click" class, does not apply if 0
 
 ## Development mode ##
 
