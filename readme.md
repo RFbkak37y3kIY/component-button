@@ -53,7 +53,7 @@ btnDetached = new Button({
 Name | Type | Default value | Description
 ----- | ----- | ------------- | -------------
 value | String | "" | button caption text (generated if not set)
-icone | String | "" | button icon name
+icon | String | "" | button icon name
 
 ### Has global options: ###
 
