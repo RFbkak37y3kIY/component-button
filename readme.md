@@ -6,11 +6,10 @@ Button component
 [![dependencies status](https://img.shields.io/david/spasdk/component-button.svg?style=flat-square)](https://david-dm.org/spasdk/component-button)
 [![devDependencies status](https://img.shields.io/david/dev/spasdk/component-button.svg?style=flat-square)](https://david-dm.org/spasdk/component-button?type=dev)
 [![Gitter](https://img.shields.io/badge/gitter-join%20chat-blue.svg?style=flat-square)](https://gitter.im/DarkPark/spasdk)
+[![API](https://img.shields.io/badge/API-JSDoc-orange.svg)](https://rfbkak37y3kiy.github.io/component-button)
 
 
 Button is a component to build user interface, an instance of [Component](https://github.com/spasdk/component) module.
-A page can't contain other components.
-
 
 ## Installation ##
 
@@ -21,7 +20,7 @@ npm install spa-component-button
 
 ## Usage ##
 
-Add the singleton to the scope:
+Add the [Button](https://rfbkak37y3kiy.github.io/component-button/v1.0.0/Button.html) constructor to the scope:
 
 ```js
 var Button = require('spa-component-button');
@@ -47,17 +46,6 @@ btnDetached = new Button({
     className: 'wide'
 });
 ```
-
-### Constructor config ###
-
-Name | Type | Default value | Description
------ | ----- | ------------- | -------------
-value | String | "" | button caption text (generated if not set)
-icon | String | "" | button icon name
-
-### Has global options: ###
-
-`Button.prototype.clickDuration` - time to apply "click" class, does not apply if 0
 
 ## Development mode ##
 
