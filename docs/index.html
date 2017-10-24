@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <title>spa-component-button docs</title>
     <style>
+        @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
         body {
+            margin: 0;
             background-color: #eee;
             font-family: 'Montserrat', sans-serif;
         }
@@ -22,20 +25,33 @@
             overflow: hidden;
         }
         h1 {
-            margin: 0.7rem 2rem;
+            font-weight: 300;
+            margin: 0;
+            padding: 20px;
         }
         h1, ul, li {
             display: inline-block;
         }
+        ul {
+            position: absolute;
+            right: 0;
+            margin: 25px;
+        }
+        li {
+            padding: 5px 15px;
+            background-color: #ccc;
+            border-radius: 15px;
+        }
     </style>
 </head>
-<body style="
-    background-color: #eee;
-">
-<h1>spa-component-button docs</h1>
-<ul>
-    <li><a href="v1.0.0/index.html" target="selfFrame">v1.0.0</a></li>
-</ul>
-<iframe src="v1.0.0/index.html" name="selfFrame" class="frame"></iframe>
+<body>
+    <div>
+        <h1>spa-component-button</h1>
+        <ul>
+            <li><a href="v1.0.0/index.html" target="selfFrame">v1.0.0</a></li>
+            <li><a href="v1.0.0/index.html" target="selfFrame">v1.0.1</a></li>
+        </ul>
+    </div>
+    <iframe src="v1.0.0/index.html" name="selfFrame" class="frame"></iframe>
 </body>
 </html>
