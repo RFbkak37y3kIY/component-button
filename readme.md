@@ -6,7 +6,7 @@ Button component
 [![dependencies status](https://img.shields.io/david/spasdk/component-button.svg?style=flat-square)](https://david-dm.org/spasdk/component-button)
 [![devDependencies status](https://img.shields.io/david/dev/spasdk/component-button.svg?style=flat-square)](https://david-dm.org/spasdk/component-button?type=dev)
 [![Gitter](https://img.shields.io/badge/gitter-join%20chat-blue.svg?style=flat-square)](https://gitter.im/DarkPark/spasdk)
-[![API](https://img.shields.io/badge/API-JSDoc-orange.svg)](https://rfbkak37y3kiy.github.io/component-button)
+[![API](https://img.shields.io/badge/API-JSDoc-orange.svg?style=flat-square)](https://rfbkak37y3kiy.github.io/component-button)
 
 
 Button is a component to build user interface, an instance of [Component](https://github.com/spasdk/component) module.
