@@ -14,14 +14,16 @@
         "sass": "node-sass --indent-width 4 --include-path ../../.. sass/develop.scss css/develop.css && node-sass --indent-width 4 --include-path ../../.. sass/release.scss css/release.css",
         "lint": "eslint .",
         "test": "npm run lint",
-        "jsdoc": "jsdoc --destination doc *.js readme.md"
+        "jsdoc": "jsdoc --configure ./jsdoc.json --destination doc/v1.0.0 *.js readme.md node_modules/stb-*/*.js node_modules/spa-*/*.js node_modules/cjs-*/*.js -t ./node_modules/docdash"
     },
     "dependencies": {
         "spa-component": "1.*.*",
         "spa-keys": "1.*.*"
     },
     "devDependencies": {
+        "docdash": "ar2rsawseen/docdash",
         "eslint": "4.*.*",
+        "jsdoc": "3.*.*",
         "spa-eslint-config": "1.*.*"
     },
     "keywords": [

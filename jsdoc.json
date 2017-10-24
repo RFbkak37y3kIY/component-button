@@ -1,0 +1,33 @@
+{
+    "tags": {
+        "allowUnknownTags": true
+    },
+    "plugins": [
+        "plugins/markdown"
+    ],
+    "markdown": {
+        "hardwrap": true,
+        "parser": "gfm"
+    },
+    "templates": {
+        "cleverLinks": false,
+        "monospaceLinks": true,
+        "default": {
+            "useLongnameInNav": false,
+            "outputSourceFiles": false,
+            "includeDate": false
+        }
+    },
+    "opts": {
+        "encoding": "utf8",
+        "private": false,
+        "template": "node_modules/docdash",
+        "verbose": true
+    },
+    "docdash": {
+        "static": true,
+        "sort": false,
+        "collapse": true,
+        "search": true
+    }
+}
