@@ -20,7 +20,7 @@ npm install spa-component-button
 
 ## Usage ##
 
-Add the [Button](https://rfbkak37y3kiy.github.io/component-button/v1.0.0/Button.html) constructor to the scope:
+Add the constructor to the scope:
 
 ```js
 var Button = require('spa-component-button');
