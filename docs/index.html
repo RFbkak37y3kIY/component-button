@@ -3,11 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <title>spa-component-button docs</title>
+    <style>
+        body {
+            background-color: #eee;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .frame {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            top: 5rem;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            position: absolute;
+            width: 100vw;
+            height: calc(100vh - 5rem);
+            overflow: hidden;
+        }
+        h1 {
+            margin: 0.7rem 2rem;
+        }
+        h1, ul, li {
+            display: inline-block;
+        }
+    </style>
 </head>
-<body>
-    <h1>spa-component-button docs</h1>
-    <ul>
-        <li><a href="v1.0.0/index.html">v1.0.0</a></li>
-    </ul>
+<body style="
+    background-color: #eee;
+">
+<h1>spa-component-button docs</h1>
+<ul>
+    <li><a href="v1.0.0/index.html" target="selfFrame">v1.0.0</a></li>
+</ul>
+<iframe src="v1.0.0/index.html" name="selfFrame" class="frame"></iframe>
 </body>
 </html>
