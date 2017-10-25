@@ -38,20 +38,48 @@
             margin: 25px;
         }
         li {
-            padding: 5px 15px;
-            background-color: #ccc;
-            border-radius: 15px;
+            padding: 5px;
         }
     </style>
+    <script>
+        function dynamicRefactoruing () {
+            var x = window._childs = document.body
+                .getElementsByTagName('iframe')[0]
+                .contentDocument
+                .getElementsByClassName('readme')[0],
+                _childs;
+
+            if(!x) return;
+
+            _childs = x.getElementsByTagName('p')[0].children;
+
+            for (var item in _childs) {
+                if (_childs[item].tagName === 'BR') {
+                    _childs[item].remove();
+                }
+                if (_childs[item].tagName === 'A') {
+                    if (_childs[item].childNodes[0].alt === "API") {
+                        _childs[item].remove();
+                    } else {
+                        _childs[item].style.paddingRight = '5px';
+                    }
+                }
+            }
+        }
+        window.onload = function() {
+            dynamicRefactoruing();
+        }
+    </script>
+
 </head>
 <body>
     <div>
         <h1>spa-component-button</h1>
         <ul>
             <li><a href="v1.0.0/index.html" target="selfFrame">v1.0.0</a></li>
-            <li><a href="v1.0.0/index.html" target="selfFrame">v1.0.1</a></li>
+            <li><a href="v1.0.0/index.html" target="selfFrame">v1.0.0</a></li>
         </ul>
     </div>
-    <iframe src="v1.0.0/index.html" name="selfFrame" class="frame"></iframe>
+    <iframe src="v1.0.0/index.html" name="selfFrame" class="frame" onload="dynamicRefactoruing()"></iframe>
 </body>
 </html>

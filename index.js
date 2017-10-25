@@ -140,7 +140,7 @@ Button.prototype.defaultEvents = {
                 /**
                  * Mouse click event emulation.
                  *
-                 * @event module:stb/ui/button~Button#click
+                 * @event Button#click
                  *
                  * @type {Object}
                  * @property {Event} event click event data
